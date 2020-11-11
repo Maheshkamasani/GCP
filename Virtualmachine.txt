@@ -1,0 +1,133 @@
+//Virtual Machine
+
+Microsoft Windows [Version 10.0.18363.1139]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\c baya reddy>go version
+go version go1.15.3 windows/amd64
+
+C:\Users\c baya reddy>ssh chinna98@23.101.112.72
+The authenticity of host '23.101.112.72 (23.101.112.72)' can't be established.
+ECDSA key fingerprint is SHA256:Pt3qUqJ9L9dciCySML8q1vRr3kBXgfVvaq/YeBowYMc.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '23.101.112.72' (ECDSA) to the list of known hosts.
+chinna98@23.101.112.72's password:
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 5.4.0-1026-azure x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Wed Nov  11 05:24:12 UTC 2020
+
+  System load:  0.88               Processes:              151
+  Usage of /:   30.7% of 28.90GB   Users logged in:        0
+  Memory usage: 2%                 IP address for eth0:    10.0.0.4
+  Swap usage:   0%                 IP address for docker0: 172.17.0.1
+
+ * Introducing self-healing high availability clustering for MicroK8s!
+   Super simple, hardened and opinionated Kubernetes for production.
+
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 5.4.0-1026-azure x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Wed Nov  11 05:24:12 UTC 2020
+
+  System load:  0.88               Processes:              151
+  Usage of /:   30.7% of 28.90GB   Users logged in:        0
+  Memory usage: 2%                 IP address for eth0:    10.0.0.4
+  Swap usage:   0%                 IP address for docker0: 172.17.0.1
+
+ * Introducing self-healing high availability clustering for MicroK8s!
+   Super simple, hardened and opinionated Kubernetes for production.
+
+     https://microk8s.io/high-availability
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+61 packages can be updated.
+48 updates are security updates.
+
+
+Last login: Thu Oct  1 09:17:03 2020 from 157.48.209.196
+chinna98@Practice:~$ ls
+EOF  client-setup.sh  export  postgres-operator.yml
+chinna98@Practice:~$ pwd
+/home/chinna98
+chinna98@Practice:~$ ls
+EOF  client-setup.sh  export  mysqldatabase.zip  postgres-operator.yml
+chinna98@Practice:~$ unzip mysqldatabase.zip
+
+Command 'unzip' not found, but can be installed with:
+
+sudo apt install unzip
+
+chinna98@Practice:~$ sudo apt install unzip
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  grub-pc-bin
+Use 'sudo apt autoremove' to remove it.
+Suggested packages:
+  zip
+The following NEW packages will be installed:
+  unzip
+0 upgraded, 1 newly installed, 0 to remove and 20 not upgraded.
+Need to get 167 kB of archives.
+After this operation, 558 kB of additional disk space will be used.
+Get:1 http://azure.archive.ubuntu.com/ubuntu bionic/main amd64 unzip amd64 6.0-21ubuntu1 [167 kB]
+Fetched 167 kB in 0s (8984 kB/s)
+Selecting previously unselected package unzip.
+(Reading database ... 85892 files and directories currently installed.)
+Preparing to unpack .../unzip_6.0-21ubuntu1_amd64.deb ...
+Unpacking unzip (6.0-21ubuntu1) ...
+Setting up unzip (6.0-21ubuntu1) ...
+Processing triggers for mime-support (3.60ubuntu1) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+chinna98@Practice:~$ unzip mysqldatabase.zip
+Archive:  mysqldatabase.zip
+  inflating: mysqldatabase/curd.go
+  inflating: mysqldatabase/employe.go
+  inflating: mysqldatabase/employeout.txt
+   creating: mysqldatabase/form/
+  inflating: mysqldatabase/form/Edit.tmpl
+  inflating: mysqldatabase/form/Footer.tmpl
+  inflating: mysqldatabase/form/Header.tmpl
+  inflating: mysqldatabase/form/Index.tmpl
+  inflating: mysqldatabase/form/Menu.tmpl
+  inflating: mysqldatabase/form/New.tmpl
+  inflating: mysqldatabase/form/Show.tmpl
+  inflating: mysqldatabase/main.go
+  inflating: mysqldatabase/sql.go
+chinna98@Practice:~$ ls
+EOF  client-setup.sh  export  mysqldatabase  mysqldatabase.zip  postgres-operator.yml
+chinna98@Practice:~$ cd mysqldatabase
+chinna98@Practice:~/mysqldatabase$ ls
+curd.go  employe.go  employeout.txt  form  main.go  sql.go
+chinna98@Practice:~/mysqldatabase$            
+
+
+
+
+
+
+
+
+//Local Machine
+
+Microsoft Windows [Version 10.0.18363.1139]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\c baya reddy\Desktop\mysqldatabase>cd..
+
+C:\Users\c baya reddy\Desktop>scp mysqldatabase.zip chinna98@23.101.112.72:/home/chinna98
+chinna98@23.101.112.72's password:
+mysqldatabase.zip                                                                     100% 6018    13.3KB/s   00:00
+
+C:\Users\c baya reddy\Desktop>
